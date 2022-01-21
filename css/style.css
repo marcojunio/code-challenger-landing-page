@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{ 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 95%;
+    height: 100%;
+}
+
+:root{
+    --red:#ca3b3a;
+    --black: #161616;
+    --grey:#707070;
+}
+
+#logo-img{
+    max-width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-content ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+.content-body{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -5rem;
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.col-2{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card{
+    margin-bottom: 15%;
+    margin-right: 20%;
+    font-size: 1.1rem;
+}
+
+.sub-feedback{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1.5rem;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.feedback ul li{
+    color: red;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.feedback ul{
+    margin-left: -40px;
+}
+
+.feedback ul li{
+    color: red;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.title-product h2{
+    color: var(--red);
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.title-product p{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.content-footer{
+    margin-top: 10%;
+    background-color: antiquewhite;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inf{
+    text-align: justify;
+    padding: 30px;
+    margin: 5px;
+    width: 10%;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+}
+
+.pricing button{
+    background-color:var(--red);
+    width: 150px;
+    height: 40px;
+    outline: none;
+    color: white;
+    border: none;
+    filter: opacity(0.98);
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.pricing button:hover{
+    transform: scale(1.02);
+    box-shadow:4px 6px 4px rgba(0,0,0,0.6);
+}
+
+.pricing span {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+
+@media (max-width:780px) {
+    .menu{
+        display: none;
+    }
+
+    .content-body{
+        flex-direction: column;
+    }
+
+    .content-footer{
+        flex-direction: column;
+    }
+
+    .inf{
+        text-align: center;
+        width: 60%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:1050px) {
+    .card{
+        margin-right: 0;
+        margin-left: 15%;
+    } 
+
+    body{
+        overflow-x: hidden;
+    }
+}
